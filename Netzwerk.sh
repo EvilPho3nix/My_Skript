@@ -1,39 +1,39 @@
 #! /bin/bash
 
-echo ip addresse anzeigen
-echo --->
+echo "ip addresse anzeigen"
+echo " --->"
 ip addr show
-echo --->
+echo "--->"
 
-echo w-lan addrese ausgeben
-echo --->
+echo "w-lan addrese ausgeben"
+echo "--->"
 iwconfig
-echo --->
+echo "--->"
 
-echo Ping 4x
-echo --->
+echo "Ping 4x"
+echo "--->"
 ping google.com -c 4
-echo --->
+echo "--->"
 
-echo Datenpackete verfolgen
+echo "Datenpackete verfolgen"
 traceroute google.com
 
-echo Mac adresse und dazugehörige IP adresse anzeigen lassen
-echo --->
+echo "Mac adresse und dazugehörige IP adresse anzeigen lassen"
+echo "--->"
 arp
-echo --->
+echo "--->"
 
-echo Geöffnete Ports anzeigen lassen
-echo --->
+echo "Geöffnete Ports anzeigen lassen"
+echo "--->"
 netstat -l
-echo --->
+echo "--->"
 
-echo IP adressen des gateways anzeigen
-echo --->
+echo "IP adressen des gateways anzeigen"
+echo "--->"
 route -n
-echo --->
+echo "--->"
 
-echo IP adresse Daomain anzeigen
-echo ---> 
+echo "IP adresse Daomain anzeigen"
+echo "---> "
 nslookup google.com
-echo --->
+echo "--->"
